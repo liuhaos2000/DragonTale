@@ -6,7 +6,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 public class AudioPlayer {
-	
+	//音频剪辑
 	private Clip clip;
 
 	public AudioPlayer(String s){
@@ -33,6 +33,7 @@ public class AudioPlayer {
 					AudioSystem.getAudioInputStream(
 							decodeFormat, ais);
 			clip = AudioSystem.getClip();
+			// 打开声音资源
 			clip.open(dais);
 			
 					
